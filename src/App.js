@@ -44,7 +44,6 @@ const ContentContainer = styled.div`
 
 const App = () => {
   const [products, setProducts] = useState();
-  console.log("products", products);
   const [currentProducts, setCurrentProducts] = useState({
     query: "toilets",
     pageNumber: 0,
