@@ -36,6 +36,12 @@ const StyledPrice = styled.h2`
   margin: 0;
 `;
 
+const StyledAverageRating = styled.h3`
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+`;
+
 export const ProductCard = (data) => {
   return (
     <ItemContainer>
@@ -46,7 +52,12 @@ export const ProductCard = (data) => {
       <ContentContainer>
         <StyledTitle>{data.data.productName}</StyledTitle>
         <StyledPrice>£{data.data.price.priceIncTax}</StyledPrice>
-        <div>{data.data.averageRating}</div>
+        {data.data.reviewsCount > 0 && (
+          <StyledAverageRating>
+            Rating: {data.data.averageRating} out of 5 ({data.data.reviewsCount}
+            )
+          </StyledAverageRating>
+        )}
         <div></div>
       </ContentContainer>
     </ItemContainer>
