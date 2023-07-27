@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# This application is to demostrate how to fetch data from an API using POST instead of GET requests
+
+## The UI is unstyled but shows renders a list of products using flexbox
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
